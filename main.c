@@ -1,6 +1,6 @@
 #include <GL/glew.h>
 #include <GLFW/glfw3.h>
-#include <math.h> // For sin and cos functions
+#include <math.h> 
 
 const char* vertexShaderSource = R"(
 #version 330 core
@@ -49,7 +49,7 @@ void generateRotationMatrix(float angle, float matrix[4][4]) {
         {0.0f, 0.0f, 0.0f, 1.0f}
     };
 
-    // Multiply the two matrices together to get the combined rotation matrix
+    // Multiply together to get combined rotation matrix
     for (int i = 0; i < 4; i++) {
         for (int j = 0; j < 4; j++) {
             matrix[i][j] = 0.0f;
